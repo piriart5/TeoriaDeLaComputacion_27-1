@@ -5,7 +5,7 @@ Sánchez Iriarte Juan Pablo $|$ 2025630142
 
 ## Problemas de Estructuras Ordenadas
 
-Sea $\Sigma = \left\{0, 1\right\}$. En los problemas 1-4, encuentre una
+Sea $\Sigma = \left\\{0, 1\right\\}$. En los problemas 1-4, encuentre una
 cadena *w* que pertenezca al conjunto *A* con las características
 indicadas, cuando sea posible.
 
@@ -63,11 +63,11 @@ siguiente en los ejercicios 5-13:
     **NO SE PUEDE**, ya que $\Sigma^0 = \lambda$, la cual es una cadena
     vacía y no contiene a la letra *a*, es decir, $\lambda \notin L_1$.
 
-Sea $\Sigma = \left\{a, b, c, d\right\}$ y $\omega$ = *abbca*, $\pi$ =
+Sea $\Sigma = \left\\{a, b, c, d\right\\}$ y $\omega$ = *abbca*, $\pi$ =
 *abb*, $\tau$ = *ca*. Consideremos los siguientes lenguajes:\
-$L_1 = \left\{\rho\in\Sigma^* : |\rho|\leq5\right\}$\
-$L_2 = \left\{a^n b^m : n < m\right\}$\
-$L_3 = \left\{\rho\in\Sigma^* : \rho  \text{ tiene más letras } b \text{ que letras } a\right\}$\
+$L_1 = \left\\{\rho\in\Sigma^* : |\rho|\leq5\right\\}$\
+$L_2 = \left\\{a^n b^m : n < m\right\\}$\
+$L_3 = \left\\{\rho\in\Sigma^* : \rho  \text{ tiene más letras } b \text{ que letras } a\right\\}$\
 Indique si las siguientes afirmaciones (14-46) son verdaderas o falsas
 
 14. $|\omega|$ = 3 $\rightarrow$ **FALSO**
@@ -153,19 +153,19 @@ Indique si las siguientes afirmaciones (14-46) son verdaderas o falsas
 
 En caso de que sea posible, encuentre cinco palabras de cada uno de los
 lenguajes que se definen en los problemas 47-56, usando el alfabeto
-$\Sigma = \left\{0,1,2,3,4,5,6\right\}$.
+$\Sigma = \left\\{0,1,2,3,4,5,6\right\\}$.
 
-47. $L_1=\left\{01^n : n\in\mathbb{N}\right\}$\
+47. $L_1=\left\\{01^n : n\in\mathbb{N}\right\\}$\
     **01, 01$^2$, 01$^3$, 01$^4$, 01$^5$**
 
-48. $L_2=\left\{0^n1^n2^n:n\in\mathbb{N}\right\}$\
+48. $L_2=\left\\{0^n1^n2^n:n\in\mathbb{N}\right\\}$\
     **012, 0$^2$1$^2$2$^2$, 0$^3$1$^3$2$^3$,
     0$^4$1$^4$2$^4$, 0$^5$1$^5$2$^5$**
 
-49. $L_3=\left\{\omega\in\Sigma^*:|\omega|=6\right\}$\
+49. $L_3=\left\\{\omega\in\Sigma^*:|\omega|=6\right\\}$\
     **012345, 102345, 120345, 123045, 123405**
 
-50. $L_4=\left\{\omega\in\Sigma^*:\text{ la suma de los dígitos de }\omega\text{ es seis}\right\}$\
+50. $L_4=\left\\{\omega\in\Sigma^*:\text{ la suma de los dígitos de }\omega\text{ es seis}\right\\}$\
     **06, 51, 42, 33, 222**
 
 51. Determine $L_1 \cap L_2$\
@@ -175,26 +175,26 @@ $\Sigma = \left\{0,1,2,3,4,5,6\right\}$.
 
 52. Determine $L_1 \cap L_3$\
     Debe tener la forma $01^n$ y longitud de 6, entonces *n = 5*;
-    $\quad\therefore L_1 \cap L_3 = \left\{ 011111   \right\}$
+    $\quad\therefore L_1 \cap L_3 = \left\\{ 011111   \right\\}$
 
 53. Determine $L_1 \cap L_4$\
     Debe tener la forma $01^n$ y la suma de sus dígitos debe ser 6,
     entonces *n = 6*;
-    $\therefore L_1 \cap L_4 = \left\{ 0111111   \right\}$
+    $\therefore L_1 \cap L_4 = \left\\{ 0111111   \right\\}$
 
 54. Determine $L_2 \cap L_3$\
     Debe tener la forma $0^n1^n2^n$ y longitud de 6, es decir, *3n = 6*,
     entonces *n = 2*;
-    $\therefore L_2 \cap L_3 = \left\{ 001122 \right\}$
+    $\therefore L_2 \cap L_3 = \left\\{ 001122 \right\\}$
 
 55. Determine $L_2 \cap L_4$\
     La suma de sus dígitos es: *0n + 1n + 2n = 3n* y *3n=6*, entonces *n
     = 2*;\
-    $\therefore L_2 \cap L_4 = \left\{ 001122 \right\}$
+    $\therefore L_2 \cap L_4 = \left\\{ 001122 \right\\}$
 
 56. Determine $L_3 \cap L_4$\
     Debe tener una longitud de 6 y la suma de dígitos igual a 6;\
-    $\therefore \left\{ 000006, 000051, 000042, 000033, 000222 \right\} \in L_3 \cap L_4$
+    $\therefore \left\\{ 000006, 000051, 000042, 000033, 000222 \right\\} \in L_3 \cap L_4$
 
 ## Propiedades de la Clausura de Kleene y Positiva
 
@@ -287,7 +287,7 @@ Demuestre las siguientes propiedades (57-65) de la clausura de Kleene
 Dado *A* un lenguaje sobre $\Sigma$, se define $A^R$ de la siguiente
 forma:
 
-$A^R = \left\{u^R : u \in A\right\}$
+$A^R = \left\\{u^R : u \in A\right\\}$
 
 donde:\
 $u^R$ es la cadena inversa de *u*.\
@@ -313,7 +313,7 @@ $A, B \subseteq\Sigma^*$)
 66. $(A \cdot B)^R = B^R \cdot A^R$
 
     Por definición de Inverso de un Lenguaje:
-    $A^R = \left\{u^R | u \in B\right\}$.\
+    $A^R = \left\\{u^R | u \in B\right\\}$.\
     Sea $\omega \in (A \cdot B)^R$. Por definición de inversa de un
     lenguaje, existe $z \in A \cdot B$ y como $z \in A \cdot B$,
     $\therefore$ existen $x \in A$ y $y \in B$, tales que: $z = xy$.
@@ -402,7 +402,7 @@ número de elementos del alfabeto.
 
 ## Prefijos y Sufijos de una Cadena
 
-Sean $\Sigma=\left\{a,b,c,d\right\}$ y $u = bcbaadb$.
+Sean $\Sigma=\left\\{a,b,c,d\right\\}$ y $u = bcbaadb$.
 
 73. Enumere todos los prefijos de *u*.
 
@@ -444,9 +444,9 @@ Sean $\Sigma=\left\{a,b,c,d\right\}$ y $u = bcbaadb$.
 
 Dado un lenguaje *A* sobre $\Sigma (A \subseteq \Sigma^*)$ y un número
 natural $n\in\mathbb{N}$, se define $A^n$ de la siguiente forma:\
-$A^0=\left\{\lambda\right\}$,
+$A^0=\left\\{\lambda\right\\}$,
 
-$A^n= \underbrace{A \cdot A \cdot\cdot\cdot A}_{n \text{ veces}} = \left\{u_1u_2 \cdot\cdot\cdot u_n : u_i \in A, \forall 1 \leq i \leq n\right\}$\
+$A^n= \underbrace{A \cdot A \cdot\cdot\cdot A}_{n \text{ veces}} = \left\\{u_1u_2 \cdot\cdot\cdot u_n : u_i \in A, \forall 1 \leq i \leq n\right\\}$\
 De esta forma $A^2$ es el conjunto de las concatenaciones dobles de
 cadenas de $A$, $A^3$ está formado por las concatenaciones triples y, en
 general, $A^n$ es el conjunto de todas las concatenaciones de n cadenas
@@ -457,17 +457,17 @@ de $A$, de todas las formas posibles.
     Sea *A* un lenguaje sobre $\Sigma$. Definimos recursivamente $A^n$
     como:
 
-    Caso base: $A^0 = \left\{\varepsilon\right\}$
+    Caso base: $A^0 = \left\\{\varepsilon\right\\}$
 
     Paso recursivo: $A^{n+1} = A^n \cdot A$
 
 ## Ejercicios
 
-76. Sea $\Sigma=\left\{0,1\right\}$. Exhiba $\Sigma^n$ para *n* = 2, 3,
+76. Sea $\Sigma=\left\\{0,1\right\\}$. Exhiba $\Sigma^n$ para *n* = 2, 3,
     4.\
-    $\Sigma^2 = \left\{00, 01, 10, 11\right\}$\
-    $\Sigma^3 = \left\{000, 001, 010, 011, 100, 101, 110, 111\right\}$\
-    $\Sigma^4 = \left\{0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111\right\}$
+    $\Sigma^2 = \left\\{00, 01, 10, 11\right\\}$\
+    $\Sigma^3 = \left\\{000, 001, 010, 011, 100, 101, 110, 111\right\\}$\
+    $\Sigma^4 = \left\\{0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111\right\\}$
 
 77. Demuestra que $|uv| = |u| + |v|$ para cualesquiera dos cadenas *u* y
     *v*.
@@ -550,13 +550,13 @@ de $A$, de todas las formas posibles.
 
     Por lo tanto, se cumple que: $(uv)^R=v^Ru^R$.
 
-80. Dado el alfabeto $\Sigma=\left\{a,b\right\}$, determina $\Sigma^*$.
+80. Dado el alfabeto $\Sigma=\left\\{a,b\right\\}$, determina $\Sigma^*$.
 
     $\Sigma^*$ representa el conjunto de todas las cadenas finitas que
     se pueden formar con *a* y *b*, incluyendo la cadena vacía
     $\varepsilon$.
 
-    $\therefore \Sigma^* = \left\{\varepsilon, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, aaaa, aaab, aaba, aabb ...\right\}$
+    $\therefore \Sigma^* = \left\\{\varepsilon, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, aaaa, aaab, aaba, aabb ...\right\\}$
 
     Podemos expresarlo mediante la definición de Clausura de Kleene,
     como:
@@ -564,9 +564,9 @@ de $A$, de todas las formas posibles.
     $\Sigma^* = \bigcup\limits_{n \geq 0} \Sigma^n$
 
     a)  Da un ejemplo de un lenguaje finito sobre $\Sigma$\
-        $L_1 = \left\{\omega \in \Sigma^* : |\omega| \leq 3\right\}$
+        $L_1 = \left\\{\omega \in \Sigma^* : |\omega| \leq 3\right\\}$
 
-    b)  Dado el lenguaje $L=\left\{a^nb^n : n\geq0\right\}$, determina
+    b)  Dado el lenguaje $L=\left\\{a^nb^n : n\geq0\right\\}$, determina
         si las cademas *aabb*, *aaaabbbb* y *abb* pertenece a *L*.
 
        1. $aabb = a^2b^2$, donde $n = 2$;
@@ -578,11 +578,11 @@ de $A$, de todas las formas posibles.
        3. $abb = a^1b^2$, como $1 \neq 2$;
           $\therefore abb \notin L$.
 
-81. Dado el alfabeto $\Sigma=\left\{a, b\right\}$, determina $\Sigma^*$.
+81. Dado el alfabeto $\Sigma=\left\\{a, b\right\\}$, determina $\Sigma^*$.
 
     En el ejercicio anterior, vimos que:
 
-    $\Sigma^* = \left\{\varepsilon, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, aaaa, aaab, aaba, aabb ...\right\}$
+    $\Sigma^* = \left\\{\varepsilon, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, aaaa, aaab, aaba, aabb ...\right\\}$
 
     Además de que podemos expresarlo mediante la definición de Clausura
     de Kleene, como:
@@ -590,16 +590,16 @@ de $A$, de todas las formas posibles.
     $\Sigma^* = \bigcup\limits_{n \geq 0} \Sigma^n$
 
     a)  $L^2$\
-        Dado que $L = \left\{a, b\right\}$, y $L^2 = L \cdot L$,
-        entonces: $\therefore L^2 = \left\{aa, ab, ba, bb\right\}$
+        Dado que $L = \left\\{a, b\right\\}$, y $L^2 = L \cdot L$,
+        entonces: $\therefore L^2 = \left\\{aa, ab, ba, bb\right\\}$
 
     b)  $L^R$\
-        Por definición: $L^R = \left\{\omega^R | \omega \in L\right\}$,
-        dado que: $L = \left\{a, b\right\}$ y
-        $L^R = \left\{a, b\right\}$,
-        $\therefore L^R = L = \left\{a, b\right\}$
+        Por definición: $L^R = \left\\{\omega^R | \omega \in L\right\\}$,
+        dado que: $L = \left\\{a, b\right\\}$ y
+        $L^R = \left\\{a, b\right\\}$,
+        $\therefore L^R = L = \left\\{a, b\right\\}$
 
-82. Sea $L = \left\{ab, aa, baa\right\}$. ¿Cuáles de las siguientes
+82. Sea $L = \left\\{ab, aa, baa\right\\}$. ¿Cuáles de las siguientes
     cadenas pertenecen a $L^*$?
 
     a)  *abaabaaabaa*\
@@ -621,13 +621,13 @@ de $A$, de todas las formas posibles.
         bloques pertenecen a L: $baa, aa, ab, aa \in L$,
         $\therefore baaaaabaa \in L$.
 
-83. Dado el lenguaje $L = \left\{ a^nb^{n+1} : n\geq0 \right\}$, ¿es
+83. Dado el lenguaje $L = \left\\{ a^nb^{n+1} : n\geq0 \right\\}$, ¿es
     cierto que $L^*=L$ para este lenguaje en particular?
 
     Recordando que
-    $L^* = \left\{\text{concatenaciones de cero o más elementos de L}\right\}$\
+    $L^* = \left\\{\text{concatenaciones de cero o más elementos de L}\right\\}$\
     Primero vemos que
-    $L = \left\{b, abb, aabbb, aaabbbb, aaaabbbbb, aaaaabbbbbb, ...\right\}$\
+    $L = \left\\{b, abb, aabbb, aaabbbb, aaaabbbbb, aaaaabbbbbb, ...\right\\}$\
     Ahora tomando el primer ejemplo de concatenación: $b \cdot b = bb$,
     sin embargo $bb \notin L$, $\therefore L^* \neq L$.
 
@@ -696,61 +696,61 @@ de $A$, de todas las formas posibles.
        conmutativa, podemos decir que: $|u| + |v| = |v| + |u|$, por lo
        tanto: $|uv| = |vu|$.
 
-86. Dado el alfabeto $A=\left\{a, b, c\right\}$, encuentra $L^*$ para:\
+86. Dado el alfabeto $A=\left\\{a, b, c\right\\}$, encuentra $L^*$ para:\
     Recordando que
-    $L^* = \left\{\text{concatenaciones de cero o más elementos de L}\right\}$.
+    $L^* = \left\\{\text{concatenaciones de cero o más elementos de L}\right\\}$.
 
-    a)  $L=\left\{b^2\right\}$\
-        $L = \left\{b^2\right\} = \left\{bb\right\}$. Los elementos de L
+    a)  $L=\left\\{b^2\right\\}$\
+        $L = \left\\{b^2\right\\} = \left\\{bb\right\\}$. Los elementos de L
         son únicamente la cadena $bb$. Al concatenarla consigo misma,
         obtenemos:\
-        $L^* = \left\{\varepsilon, bb, bbbb, bbbbbb, bbbbbbbb, ...\right\}$,por
-        lo tanto: $L^* = \left\{b^{2n} : n \geq 0\right\}$.
+        $L^* = \left\\{\varepsilon, bb, bbbb, bbbbbb, bbbbbbbb, ...\right\\}$,por
+        lo tanto: $L^* = \left\\{b^{2n} : n \geq 0\right\\}$.
 
-    b)  $L=\left\{a, b\right\}$\
+    b)  $L=\left\\{a, b\right\\}$\
         Los elementos de L son las cadenas a y b. Al concatenarlas,
-        obtenermos todas las cadenas sobre $\left\{a, b\right\}$,
+        obtenermos todas las cadenas sobre $\left\\{a, b\right\\}$,
         incluyendo $\varepsilon$, obteniendo:\
-        $L^* = \left\{\varepsilon, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, ...\right\}$.
-        Podemos expresarlo como: $L^* = \left\{a, b\right\}^*$.
+        $L^* = \left\\{\varepsilon, a, b, aa, ab, ba, bb, aaa, aab, aba, abb, baa, bab, bba, bbb, ...\right\\}$.
+        Podemos expresarlo como: $L^* = \left\\{a, b\right\\}^*$.
 
-    c)  $L=\left\{a,b,c^3\right\}$\
+    c)  $L=\left\\{a,b,c^3\right\\}$\
         Podemos concatenar cualquier cantidad de *a*, *b* y bloques de
         tres *c's*;\
         incluyendo la cadena vacía ($\varepsilon$).
 
        Podemos decir:
-       $L^* = \left\{\omega \in \{a,b,c\}^*:\text{la cantidad de } c \text{ en 
-       } \omega \text{ es múltiplo de } 3 \right\}$
+       $L^* = \left\\{\omega \in \left\\{a,b,c\right\\}^*:\text{la cantidad de } c \text{ en 
+       } \omega \text{ es múltiplo de } 3 \right\\}$
        
        O también:
-       $L^* = {a,b,ccc}^*$
+       $L^* = \left\\{a,b,ccc\right\\}^*$
 
-87. Para el lenguaje $L=\left\{ab, c\right\}$ sobre el alfabeto
-    $A=\left\{a, b, c\right\}$, calcula:
+87. Para el lenguaje $L=\left\\{ab, c\right\\}$ sobre el alfabeto
+    $A=\left\\{a, b, c\right\\}$, calcula:
 
     a)  $L^3$\
-        $L^3 = \left\{ababab, ababc, abcab, abcc, cabab, cabc, ccab, ccc\right\}$.
+        $L^3 = \left\\{ababab, ababc, abcab, abcc, cabab, cabc, ccab, ccc\right\\}$.
 
     b)  $L^{-2}$\
         En lenguajes formales, **las potencias negativas de un lenguaje
         no están definidas**. Por lo tanto:\
-        $L^2 \text{ no está definido}$.
+        $L^{-2} \text{ no está definido}$.
 
     c)  $L^0$\
         La potencia cero de cualquier lenguaje es el lenguaje que
         contiene únicamente la cadena vacía.\
-        $L^0 = \left\{\lambda\right\}$.
+        $L^0 = \left\\{\lambda\right\\}$.
 
-88. Dados los lenguajes $L_1 = \left\{a, ab, a^2\right\}$ y
-    $L_2 = \left\{b^2, aba\right\}$ sobre el alfabeto
-    $A = \left\{a, b\right\}$, determina:
+88. Dados los lenguajes $L_1 = \left\\{a, ab, a^2\right\\}$ y
+    $L_2 = \left\\{b^2, aba\right\\}$ sobre el alfabeto
+    $A = \left\\{a, b\right\\}$, determina:
 
     a)  $L_1L_2$\
-        $L_1L_2 = \left\{ab^2, a^2ba, ab^3, ababa, a^2b^2, a^3ba\right\} = \left\{abb, aaba, abbb, ababa, aabb, aaaba\right\}$
+        $L_1L_2 = \left\\{ab^2, a^2ba, ab^3, ababa, a^2b^2, a^3ba\right\\} = \left\\{abb, aaba, abbb, ababa, aabb, aaaba\right\\}$
 
     b)  $L_2L_2$\
-        $L_2L_2 = \left\{b^4, b^2aba, abab^2, aba^2ba\right\} = \left\{bbbb, bbaba, ababb, abaaba\right\}$
+        $L_2L_2 = \left\\{b^4, b^2aba, abab^2, aba^2ba\right\\} = \left\\{bbbb, bbaba, ababb, abaaba\right\\}$
 
 89. Dados $u = a^2b$ y $v = b^3ab$, encuentra:
 
@@ -764,41 +764,41 @@ de $A$, de todas las formas posibles.
         $v \cdot \lambda = v = b^3ab = bbbab$\
         $u \cdot \lambda \cdot v = u \cdot v = a^2b \cdot b^3ab = aabbbbab$
 
-90. Dado el alfabeto $A = \left\{a, b, c\right\}$, determina si $L_1$,
+90. Dado el alfabeto $A = \left\\{a, b, c\right\\}$, determina si $L_1$,
     $L_2$, $L_3$ y $L_4$ son lenguajes sobre *A*, donde:
 
-    a)  $L_1 = \left\{a, aa, ab, ac, abc, cab\right\}$\
+    a)  $L_1 = \left\\{a, aa, ab, ac, abc, cab\right\\}$\
         Todas las cadenas están formadas por símbolos $a, b, c$, que
         pertenecen a *A*.\
         Por lo tanto: $L_1 \text{ SI es un lenguaje sobre } A$.
 
-    b)  $L_2 = \left\{aba, aabaa\right\}$\
+    b)  $L_2 = \left\\{aba, aabaa\right\\}$\
         Todas las cadenas están formadas por símbolos $a, b$, que
         pertenecen a *A*.\
         Por lo tanto: $L_2 \text{ SI es un lenguaje sobre } A$.
 
-    c)  $L_3 = \left\{\quad\right\}$\
+    c)  $L_3 = \left\\{\quad\right\\}$\
         El conjunto vacío no contiene ningúna cadena que pudiera
         utilizar símbolos fuera de *A*, además:
         $\varnothing \subseteq A^*$.\
         Por lo tanto: $L_3 \text{ SI es un lenguaje sobre } A$.
 
-    d)  $L_4 = \left\{a^icb^i : i\geq1\right\}$\
+    d)  $L_4 = \left\\{a^icb^i : i\geq1\right\\}$\
         Las cadenas se pueden formar por símbolos $a, b, c$, que
         pertenecen a *A*.\
         Por lo tanto: $L_4 \text{ SI es un lenguaje sobre } A$.
 
-91. a)  Dados $L_1 = \left\{a^ib^j : i>j\geq1\right\}$ y
-        $L_2 = \left\{a^ib^j : 1\leq i<j\right\}$, encuentra
+91. a)  Dados $L_1 = \left\\{a^ib^j : i>j\geq1\right\\}$ y
+        $L_2 = \left\\{a^ib^j : 1\leq i<j\right\\}$, encuentra
         $L_1 \cup L_2$.\
         La unión contiene las cadenas que pertenecen a $L_1$ o a $L_2$.
         Ahora, en $L_1: i>j$ y en $L_2: i<j$, sin embargo ambos son
         $\geq 1$.\
         Por lo tanto:
-        $L_1 \cup L_2 = \left\{a^ib^j : i,j \geq 1, i \neq j\right\}$.
+        $L_1 \cup L_2 = \left\\{a^ib^j : i,j \geq 1, i \neq j\right\\}$.
 
-    b)  Dados $L_3 = \left\{a^ib^ic^j : i,j\geq 1\right\}$ y
-        $L_4 = \left\{a^ib^jc^j : i,j\geq 1\right\}$, encuentra
+    b)  Dados $L_3 = \left\\{a^ib^ic^j : i,j\geq 1\right\\}$ y
+        $L_4 = \left\\{a^ib^jc^j : i,j\geq 1\right\\}$, encuentra
         $L_3 \cap L_4$.\
         La intersección contiene las cadenas que pertenecen
         simultáneamente en $L_3$ y $L_4$. Ahora, en
@@ -806,7 +806,7 @@ de $A$, de todas las formas posibles.
         $L_4: |\omega|_b| = |\omega|_c$, por lo tanto, debe cumplirse:
         $|\omega|_a = |\omega|_b| = \omega|_c$.\
         Por lo tanto:
-        $L_3 \cap L_4 = \left\{a^ib^ic^i : i \geq 1\right\}$.
+        $L_3 \cap L_4 = \left\\{a^ib^ic^i : i \geq 1\right\\}$.
 
 92. Dados $L_1$ como el lenguaje del inglés y $L_2$ como el lenguaje del
     francés, ¿qué significan:
@@ -822,31 +822,31 @@ de $A$, de todas las formas posibles.
         palabras que están tanto en inglés como en francés**, por
         ejemplo: weekend, T-shirt, cool.
 
-93. Sea $A=\left\{a, b\right\}$ y $B=\left\{b, c, d\right\}$\
+93. Sea $A=\left\\{a, b\right\\}$ y $B=\left\\{b, c, d\right\\}$\
     Definimos los siguientes lenguajes:
 
-    $L_1 = \left\{a^ib^j \quad|\quad i\geq1, j\geq1\right\}$
+    $L_1 = \left\\{a^ib^j \quad|\quad i\geq1, j\geq1\right\\}$
 
-    $L_2 = \left\{b^ic^j \quad|\quad i\geq j\geq1\right\}$
+    $L_2 = \left\\{b^ic^j \quad|\quad i\geq j\geq1\right\\}$
 
-    $L_3 = \left\{a^ib^jc^id^j \quad|\quad i\geq1, j\geq1\right\}$
+    $L_3 = \left\\{a^ib^jc^id^j \quad|\quad i\geq1, j\geq1\right\\}$
 
-    $L_4 = \left\{(ad)^ia^jd^j \quad|\quad i\geq2, j\geq1\right\}$
+    $L_4 = \left\\{(ad)^ia^jd^j \quad|\quad i\geq2, j\geq1\right\\}$
 
     Determine si las siguientes afirmaciones son verdaderas o falsas:
 
     Primero calculamos los alfabetos combinados:
 
-    $A \cup B = \left\{a, b, c, d\right\}$\
-    $A \cap B = \left\{b\right\}$\
-    $A - B = \left\{a\right\}$\
-    $B - A = \left\{c, d\right\}$\
-    $A \oplus B = (A - B) \cup (B - A) = \left\{a, c, d\right\}$
+    $A \cup B = \left\\{a, b, c, d\right\\}$\
+    $A \cap B = \left\\{b\right\\}$\
+    $A - B = \left\\{a\right\\}$\
+    $B - A = \left\\{c, d\right\\}$\
+    $A \oplus B = (A - B) \cup (B - A) = \left\\{a, c, d\right\\}$
 
 
     a)  $L_1$ es un lenguaje sobre *A*.\
         $L_1$ utiliza únicamente *a* y *b*. Como:
-        $\left\{a,b\right\} = A$, $\quad\therefore$ **VERDADERO**
+        $\left\\{a,b\right\\} = A$, $\quad\therefore$ **VERDADERO**
 
     b)  $L_1$ es un lenguaje sobre *B*.\
         $L_1$ contiene cadenas con *a*, pero $a \notin B$,
@@ -862,7 +862,7 @@ de $A$, de todas las formas posibles.
 
     e)  $L_3$ es un lenguaje sobre $A \cup B$.\
         $L_3$ utiliza $a, b, c, d$, y como:
-        $A \cup B = \left\{a,b,c,d\right\}$, $\quad\therefore$
+        $A \cup B = \left\\{a,b,c,d\right\\}$, $\quad\therefore$
         **VERDADERO**
 
     f)  $L_3$ es un lenguaje sobre $A \cap B$.\
@@ -878,7 +878,7 @@ de $A$, de todas las formas posibles.
         $\quad\therefore$ **FALSO**
 
     i)  $L_1$ es un lenguaje sobre $B - A$.\
-        $L_1$ contiene *a* y *b*, pero $B - A = \left\{c, d\right\}$ y
+        $L_1$ contiene *a* y *b*, pero $B - A = \left\\{c, d\right\\}$ y
         $a, b \notin B - A$, $\quad\therefore$ **FALSO**
 
     j) $L_1 \cup L_2$ es un lenguaje sobre $A$.\
@@ -887,7 +887,7 @@ de $A$, de todas las formas posibles.
 
     k) $L_1 \cup L_2$ es un lenguaje sobre $A \cup B$.\
         $L_1$ utiliza $a, b$, y $L_2$ utiliza $b, c$. Además,
-        $A \cup B = \left\{a, b, c, d\right\}$,\
+        $A \cup B = \left\\{a, b, c, d\right\\}$,\
         $\therefore$ **VERDADERO**
 
     l) $L_1 \cup L_2$ es un lenguaje sobre $A \cap B$.\
@@ -895,7 +895,7 @@ de $A$, de todas las formas posibles.
         $a, c \notin A \cap B$, $\quad\therefore$ **FALSO**
 
     m) $L_1 \cap L_2$ es un lenguaje sobre $B$.\
-        $L_1 = \left\{a^ib^j\right\}$ y $L_2 = \left\{b^ic^j\right\}$.
+        $L_1 = \left\\{a^ib^j\right\\}$ y $L_2 = \left\\{b^ic^j\right\\}$.
         Para una intersección, una cadena debe pertenecer a ambos
         lenguajes. Sin embargo, $L_1$ contiene *a's* antes de las *b's*,
         mientras que $L_2$ contiene *b's* antes de las *c's*. Por lo
