@@ -18,7 +18,7 @@ Politécnico Nacional (IPN).
 
 ## Contenido
 
-- [Unidad 1](./Unidad-1/)
-- [Unidad 2](./unidad-2/)
-- [Unidad 3](./unidad-3/)
+- [Unidad 1](./Unidad%201/)
+- [Unidad 2](./unidad%202/)
+- [Unidad 3](./unidad%203/)
 - [Recursos](./recursos/)
