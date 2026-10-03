@@ -21,4 +21,3 @@ Politécnico Nacional (IPN).
 - [Unidad 1](./Unidad%201/)
 - [Unidad 2](./unidad%202/)
 - [Unidad 3](./unidad%203/)
-- [Recursos](./recursos/)
