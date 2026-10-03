@@ -15,8 +15,8 @@ indicadas, cuando sea posible.
 2.  $A = \Sigma^+$. Encuentre *w* tal que $|w|$ = 0.\
     **NO HAY *w*** tal que $|w|$ = 0, ya que la definición de **Clausura
     Positiva** nos dice que
-    **$\Sigma^+ = \Sigma^* - \left\{\lambda\right\}$**; por lo tanto,
-    *A* no contiene la *cadena vacía ($\lambda$)*.
+    $\Sigma^+ = \Sigma^* - \left\\{\lambda\right\\}$; por lo tanto,
+    *A* no contiene la *cadena vacía* ($\lambda$).
 
 3.  $A = \Sigma^*$. Encuentre *w* tal que $|w|$ = 0.\
     ***w* = $\lambda$**
@@ -65,9 +65,9 @@ siguiente en los ejercicios 5-13:
 
 Sea $\Sigma = \left\\{a, b, c, d\right\\}$ y $\omega$ = *abbca*, $\pi$ =
 *abb*, $\tau$ = *ca*. Consideremos los siguientes lenguajes:\
-$L_1 = \left\\{\rho\in\Sigma^* : |\rho|\leq5\right\\}$\
-$L_2 = \left\\{a^n b^m : n < m\right\\}$\
-$L_3 = \left\\{\rho\in\Sigma^* : \rho  \text{ tiene más letras } b \text{ que letras } a\right\\}$\
+   $L_1 = \left\\{\rho\in\Sigma^* : |\rho|\leq5\right\\}$\
+   $L_2 = \left\\{a^n b^m : n < m\right\\}$\
+   $L_3 = \left\\{\rho\in\Sigma^* : \rho  \text{ tiene más letras } b \text{ que letras } a\right\\}$\
 Indique si las siguientes afirmaciones (14-46) son verdaderas o falsas
 
 14. $|\omega|$ = 3 $\rightarrow$ **FALSO**
@@ -107,7 +107,7 @@ Indique si las siguientes afirmaciones (14-46) son verdaderas o falsas
 29. $|a^2c^3|=|c^6|$ $\rightarrow$ **FALSO**,
     $|a^2b^3|=5$ y $|c^6|=6$
 
-30. $|a^4b^3c|$=$|a^3b^2c^3|$ $\rightarrow$ **VERDADERO**,
+30. $|a^4b^3c| = |a^3b^2c^3| \rightarrow$ **VERDADERO**,
     $|a^4b^3c|=8$ y $|a^3b^2c^3|=8$
 
 31. *ab* $\in L_1$ $\rightarrow$ **VERDADERO**
@@ -117,17 +117,17 @@ Indique si las siguientes afirmaciones (14-46) son verdaderas o falsas
 33. *ab* $\in L_3$ $\rightarrow$ **FALSO**, misma
     cantidad de *a* que de *b*
 
-34. *aba$b^2$* $\in L_1$ $\rightarrow$ **VERDADERO**
+34. *aba*$b^2$ $\in L_1$ $\rightarrow$ **VERDADERO**
 
-35. *aba$b^2$* $\in L_2$ $\rightarrow$ **VERDADERO**,
+35. *aba*$b^2$ $\in L_2$ $\rightarrow$ **VERDADERO**,
     *n*=2, *m*=3 $\therefore n < m$
 
-36. *aba$b^2$* $\in L_3$ $\rightarrow$ **VERDADERO**
+36. *aba*$b^2$ $\in L_3$ $\rightarrow$ **VERDADERO**
 
 37. *abcad* $\in L_1$ $\rightarrow$ **VERDADERO**
 
 38. *abcad* $\in L_2$ $\rightarrow$ **FALSO**,
-    *n*=2, *m*=1 $\therefore n \nless m$
+    *n*=2, *m*=1 $\therefore\quad n \nless m$
 
 39. *abcad* $\in L_3$ $\rightarrow$ **FALSO**
 
@@ -156,17 +156,16 @@ lenguajes que se definen en los problemas 47-56, usando el alfabeto
 $\Sigma = \left\\{0,1,2,3,4,5,6\right\\}$.
 
 47. $L_1=\left\\{01^n : n\in\mathbb{N}\right\\}$\
-    **01, 01$^2$, 01$^3$, 01$^4$, 01$^5$**
+    $01$, $01^2$, $01^3$, $01^4$, $01^5$
 
 48. $L_2=\left\\{0^n1^n2^n:n\in\mathbb{N}\right\\}$\
-    **012, 0$^2$1$^2$2$^2$, 0$^3$1$^3$2$^3$,
-    0$^4$1$^4$2$^4$, 0$^5$1$^5$2$^5$**
+    $012$, $0^21^22^2$, $0^31^32^3$, $0^41^42^4$, $0^51^52^5$
 
 49. $L_3=\left\\{\omega\in\Sigma^*:|\omega|=6\right\\}$\
-    **012345, 102345, 120345, 123045, 123405**
+    $012345$, $102345$, $120345$, $123045$, $123405$
 
 50. $L_4=\left\\{\omega\in\Sigma^*:\text{ la suma de los dígitos de }\omega\text{ es seis}\right\\}$\
-    **06, 51, 42, 33, 222**
+    $06$, $51$, $42$, $33$, $222$
 
 51. Determine $L_1 \cap L_2$\
     Una palabra de $L_1$ únicamente tiene un '0' y varios '1'. Mientras
@@ -198,54 +197,54 @@ $\Sigma = \left\\{0,1,2,3,4,5,6\right\\}$.
 
 ## Propiedades de la Clausura de Kleene y Positiva
 
-Sea *A* un lenguaje sobre $\Sigma$, es decir, *A*$\subseteq\Sigma^*$.
+Sea *A* un lenguaje sobre $\Sigma$, es decir, $A \subseteq \Sigma^* $.
 Demuestre las siguientes propiedades (57-65) de la clausura de Kleene
-($A^*$) y la clausura positiva ($A^+$):
+($A^* $) y la clausura positiva ($A^+ $):
 
-57. $A^+ = A^* \cdotp A = A \cdot A^*$\
-    $A^* \cdot A = ( \bigcup\limits_{n \geq 0} A^n \cdot A) = \bigcup\limits_{n \geq 0}(A^n \cdot A) = \bigcup\limits_{n \geq 0} A^{n+1} = \bigcup\limits_{m \geq 1} = A^+$\
-    $A \cdot A^* = (A \cdot \bigcup\limits_{n \geq 0} A^n) = \bigcup\limits_{n \geq 0} (A \cdot A^n) = \bigcup\limits_{n \geq 0} A^{1+n} = \bigcup\limits_{m \geq 1} = A^+$\
-    $\therefore A^+ = A^* \cdotp A = A \cdot A^*$
+57. $$A^+ = A^* \cdot A = A \cdot A^* $$\
+    $$A^* \cdot A = ( \bigcup\limits_{n \geq 0} A^n \cdot A) = \bigcup\limits_{n \geq 0}(A^n \cdot A) = \bigcup\limits_{n \geq 0} A^{n+1} = \bigcup\limits_{m \geq 1} = A^+$$\
+    $$A \cdot A^* = (A \cdot \bigcup\limits_{n \geq 0} A^n) = \bigcup\limits_{n \geq 0} (A \cdot A^n) = \bigcup\limits_{n \geq 0} A^{1+n} = \bigcup\limits_{m \geq 1} = A^+$$\
+    $\therefore A^+ = A^* \cdotp A = A \cdot A^* $
 
-58. $A^* \cdot A^* = A^*$\
-    Por definición, sabemos que:
-    $B^* = \bigcup\limits_{n \geq 0} B^n \\ \text{Entonces: } A^*\cdot A^* = (\bigcup\limits_{i \geq 0} A^i) \cdot (\bigcup\limits_{j \geq 0} A^j) = \bigcup\limits_{i,j \geq 0} (A^i \cdot A^j) = \bigcup\limits_{i,j \geq 0} A^{i+j} = \bigcup\limits_{m \geq 0} A^m = A^* \\\therefore A^* \cdot A^* = A^*$
+58. $$A^* \cdot A^* = A^* $$\
+    Por definición, sabemos que: $$B^* = \bigcup\limits_{n \geq 0} B^n $$\
+    Entonces: $$A^* \cdot A^* = (\bigcup\limits_{i \geq 0} A^i) \cdot (\bigcup\limits_{j \geq 0} A^j) = \bigcup\limits_{i,j \geq 0} (A^i \cdot A^j) = \bigcup\limits_{i,j \geq 0} A^{i+j} = \bigcup\limits_{m \geq 0} A^m = A^* $$\
+    $\therefore A^* \cdot A^* = A^* $
 
-59. $(A^*)^n = A^*$, $\forall n\geq1$\
-    Caso base: $n=1$ $(A^*)^1 = A^*$\
+59. $$(A^* )^n = A^* $$, $$\forall n \geq 1 $$\
+    Caso base: $n=1$, $$(A^* )^1 = A^* $$\
     Hipótesis de inducción: Supóngase que para algún $n \geq 1$ se
-    cumple: $(A^*)^n=A^*$.\
-    Demostremos: $(A^*)^{n+1} = A^*$;
-    $(A^*)^{n+1} = (A^*)^n \cdot A^* = A^* \cdot A^*$, ya demostramos
-    que
-    $A^* \cdot A^* = A^*, \quad\therefore \text{ por inducción matemática: } (A^*)^n = A^*, \forall n \geq 1.$
+    cumple: $$(A^* )^n = A^* $$.\
+    Demostremos: $(A^* )^{n+1} = A^* $;
+    $(A^* )^{n+1} = (A^* )^n \cdot A^* = A^* \cdot A^* $, ya demostramos
+    que $A^* \cdot A^* = A^* $\
+    $\therefore$, por inducción matemática: $(A^* )^n = A^* , \forall n \geq 1 $.
 
-60. $(A^*)^* = A^*$\
-    Por definición: $B^* = \bigcup\limits_{i\geq0} B^i$, en este caso,
-    $B=A^*$.\
+60. $(A^* )^* = A^* $\
+    Por definición: $$B^* = \bigcup\limits_{i\geq0} B^i $$, en este caso,
+    $B=A^* $.\
     Entonces
-    $(A^*)^* = \bigcup\limits_{i \geq 0} (A^*)^i = A^0 \cup \bigcup\limits_{i \geq 1} (A^*)^i = \left\{\lambda\right\} \cup \bigcup\limits_{i \geq 1} (A^*)^i$;\
-    vimos que $(B^*)^n = B^*$, $\forall n \geq 1$,
-    $\rightarrow \left\{\lambda\right\} \cup \bigcup\limits_{i \geq 1} A^* = \left\{\lambda\right\} \cup A^* = A^* \quad \therefore (A^*)^* = A^*$.
+    $$(A^* )^* = \bigcup\limits_{i \geq 0} (A^* )^i = A^0 \cup \bigcup\limits_{i \geq 1} (A^* )^i = \left\\{\lambda\right\\} \cup \bigcup\limits_{i \geq 1} (A^* )^i $$;\
+ vimos que $$(B^* )^n = B^* $$ ($$\forall n \geq 1 $$), $$\rightarrow \left\\{ \lambda \right\\} \cup \bigcup\limits_{i \geq 1} A^* = \left\\{ \lambda \right\\} \cup A^* = A^* \quad \therefore (A^* )^* = A^* $$.
 
 61. $A^+ \cdot A^+ \subseteq A^+$\
     Por definición, sabemos que: $B^+ = \bigcup\limits_{n\geq1} B^n$\
     Entonces:
-    $A^+ \cdot A^+ = \bigcup\limits_{i\geq1} A^i \cdot \bigcup\limits_{j\geq1} A^j = \bigcup\limits_{i,j\geq1} A^{i+j} = \bigcup\limits_{k\geq1} A^{k} = A^+ \quad \therefore A^+ \cdot A^+ \subseteq A^*$.
+    $A^+ \cdot A^+ = \bigcup\limits_{i\geq1} A^i \cdot \bigcup\limits_{j\geq1} A^j = \bigcup\limits_{i,j\geq1} A^{i+j} = \bigcup\limits_{k\geq1} A^{k} = A^+ \quad \therefore A^+ \cdot A^+ \subseteq A^* $.
 
-62. $(A^*)^+ = A^*$\
+62. $$(A^* )^+ = A^* $$\
     Por definición de Clausura Positiva:
-    $(A^*)^+ = \bigcup\limits_{n \geq 1} (A^*)^n$, además, hemos
-    demostrado que: $(A^*)^n = A^*, \forall n \geq 1$,
-    $\quad\therefore (A^*)^+ = A^*$.
+    $(A^* )^+ = \bigcup\limits_{n \geq 1} (A^* )^n$, además, hemos
+    demostrado que: $$(A^* )^n = A^* , \forall n \geq 1 $$,
+    $$\quad\therefore (A^* )^+ = A^* $$.
 
-63. $(A^+)^* = A^*$\
+63. $(A^+)^* = A^* $\
     Por definición de Clausura de Kleene:
-    $(A^+)^* = \bigcup\limits_{n \geq 0} (A^+)^n = (A^+)^0 \cup \bigcup\limits_{n \geq 1} (A^+)^n = \left\{\lambda\right\} \cup \bigcup\limits_{n \geq 1} (A^+)^n$,
+    $(A^+)^* = \bigcup\limits_{n \geq 0} (A^+)^n = (A^+)^0 \cup \bigcup\limits_{n \geq 1} (A^+)^n = \left\\{ \lambda \right\\} \cup \bigcup\limits_{n \geq 1} (A^+)^n$,
     además, demostramos que:
     $A^+ \cdot A^+ \subseteq A^+ \quad (\forall n \geq 1)$.\
-    Entonces: $(A^+)^* \subseteq \left\{\lambda\right\} \cup A^+ =A^*$
-    $\quad\therefore (A^+)^* = A^*$.
+    Entonces: $$(A^+)^* \subseteq \left\\{ \lambda \right\\} \cup A^+ =A^* $$
+    $\quad\therefore (A^+)^* = A^* $.
 
 64. $(A^+)^+ = A^+$\
     Por definición: $(A^+)^+ = \bigcup\limits_{n\geq1} (A^+)^n$, además,
@@ -255,32 +254,31 @@ Demuestre las siguientes propiedades (57-65) de la clausura de Kleene
     para la otra inclusión:
     $(A^+)^1 \subseteq A^+ \rightarrow A^+ \subseteq (A^+)^+ \quad\quad \therefore (A^+)^+ = A^+$.
 
-65. Si *A* y *B* son lenguajes sobre $\Sigma^*$, entonces
-    $(A \cup B)^* = (A^*B^*)^*$
+65. Si *A* y *B* son lenguajes sobre $\Sigma^* $, entonces $$(A \cup B)^* = (A^* B^* )^* $$
 
-    Si $x \in A$, entonces: $x = x \varepsilon$, con $x \in A^*$ y
-    $\varepsilon \in B^*. \quad \therefore x \in A^*B^*$
+    Si $$x \in A $$, entonces: $x = x \varepsilon$, con $$x \in A^* $$ y
+    $$\varepsilon \in B^* . \quad \therefore \quad x \in A^* B^* $$
 
-    Del mismo modo, si $x \in B$, entonces: $x = \varepsilon x$, con
-    $\varepsilon \in A^*$ y $x \in B^*. \quad \therefore x \in A^*B^*$
+    Del mismo modo, si $x \in B$, entonces: $$x = \varepsilon x$$, con
+    $$\varepsilon \in A^* $$ y $$x \in B^* . \quad \therefore \quad x \in A^* B^* $$
 
-    Por lo tanto, $A \cup B \subseteq A^*B^*$, aplicando Clausura de
-    Kleene: $(A \cup B)^* \subseteq (A^*B^*)^*$
+    Por lo tanto, $A \cup B \subseteq A^* B^* $, aplicando Clausura de
+    Kleene: $(A \cup B)^* \subseteq (A^* B^* )^* $
 
-    Como $A \subseteq A \cup B$, entonces: $A^* \subseteq (A \cup B)^*$.
+    Como $A \subseteq A \cup B$, entonces: $A^* \subseteq (A \cup B)^* $.
 
     Igualmente: $B \subseteq A \cup B$, implica:
-    $B^* \subseteq (A \cup B)^*$.
+    $B^* \subseteq (A \cup B)^* $.
 
-    Por lo tanto, si $x \in A^*$ y $y \in B^*$, como $(A \cup B)^*$ es
-    concatenado: $xy \in (A \cup B)^*$, así:
-    $A^*B^* \subseteq (A \cup B)^*$.
+    Por lo tanto, si $$x \in A^* $$ y $$y \in B^* $$, como $$(A \cup B)^* $$ es
+    concatenado: $$xy \in (A \cup B)^* $$, así:
+    $$A^* B^* \subseteq (A \cup B)^* $$.
 
-    Aplicando estrella: $(A^*B^*)^* \subseteq ((A \cup B)^*)^*$ y como
+    Aplicando estrella: $$(A^* B^* )^* \subseteq ((A \cup B)^* )^* $$ y como
     vimos:
-    $(B^*)^* = B^* \\ \therefore (A^*B^*)^* \subseteq (A \cup B)^*$
+    $$(B^* )^* = B^* \\ \therefore (A^* B^* )^* \subseteq (A \cup B)^* $$
 
-    Por lo tanto: $(A \cup B)^* = (A^*B^*)^*$
+    Por lo tanto: $$(A \cup B)^* = (A^* B^* )^* $$
 
 ## Reflexión o Inverso de un Lenguaje
 
@@ -304,13 +302,12 @@ $A, B \subseteq\Sigma^*$)
 
 69. $(A^R)^R = A$
 
-70. $(A^*)^R = (A^R)^*$
+70. $$(A^* )^R = (A^R)^* $$
 
 71. $(A^+)^R = (A^R)^+$
 
 **Ejercicio:** Demuestre la propiedad 66 y 70.
-
-66. $(A \cdot B)^R = B^R \cdot A^R$
+- **66.** $(A \cdot B)^R = B^R \cdot A^R$
 
     Por definición de Inverso de un Lenguaje:
     $A^R = \left\\{u^R | u \in B\right\\}$.\
@@ -332,37 +329,43 @@ $A, B \subseteq\Sigma^*$)
     por lo tanto: $\omega \in B^RA^R$.
 
     Así, como: $\omega \in (A \cdot B)^R$ y $\omega \in B^RA^R$,
-    $\quad\therefore(A \cdot B)^R = B^R \cdot A^R$
+    $\quad\therefore(A \cdot B)^R = B^R \cdot A^R$\
+   
 
-67. $(A^*)^R = (A^R)^*$
+- **70.** $$(A^* )^R = (A^R)^* $$
 
     Por definición de Clausura de Kleene:
     $A^* = \bigcup\limits_{n \geq 0} A^n$, entonces:
-    $(A^*)^R = (\bigcup\limits_{n \geq 0} A^n)^R$. La inversa de una
+    $$(A^* )^R = (\bigcup\limits_{n \geq 0} A^n)^R $$. La inversa de una
     unión se puede distribuir:
-    $(A^*)^R = \bigcup\limits_{n \geq 0} (A^n)^R$.
+    $$(A^* )^R = \bigcup\limits_{n \geq 0} (A^n)^R $$.
 
     Ahora, para cada *n*, invertir una cadena formada por *n* elementos
     de *A*, produce una cadena formada por *n*-elementos de $A^R$. Por
     lo tanto: $(A^n)^R = (A^R)^n$.
 
-    Entonces: $(A^*)^R = \bigcup\limits_{n \geq 0} (A^R)^n$, de nuevo,
+    Entonces: $$(A^* )^R = \bigcup\limits_{n \geq 0} (A^R)^n $$, de nuevo,
     por definición de Clausura de Kleene:
-    $\bigcup\limits_{n \geq 0} (A^R)^n = (A^R)^*$,\
-    Por lo tanto: $(A^*)^R = (A^R)^*$.
+    $$\bigcup\limits_{n \geq 0} (A^R)^n = (A^R)^* $$,\
+    Por lo tanto: $$(A^* )^R = (A^R)^* $$.
 
 ## Longitud de Cadenas
 
 La longitud de una cadena $u\in\Sigma^*$ se denota $|u|$ y se define
 como el número de símbolos de *u* (contando los símbolos repetidos). Es
-decir, $$|u| = \begin{cases}
-        0, & \text{si } u = \lambda,\\
-        n, & \text{si } u = a_1a_2 \cdot\cdot\cdot a_n 
-    \end{cases}$$ 
+decir,
+```math
+|u| =
+\begin{cases}
+0, & \text{si } u = \lambda,\\
+n, & \text{si } u = a_1a_2\cdots a_n
+\end{cases}
+```
 
 **Ejercicio:** Si $\omega\in\Sigma^*$,
 $n,m\in\mathbb{N}$, demuestre que
-$|\omega^{n+m}| = |\omega^n|+|\omega^m|$\
+$|\omega^{n+m}| = |\omega^n|+|\omega^m|$
+
 Por definición de potencia: $\omega^{n+m} = \omega^n\omega^m$. Entonces:
 $|\omega^{n+m}| = |\omega^n\omega^m|$.\
 Verémos en los últimos ejercicios de esta lista que:
@@ -518,9 +521,9 @@ de $A$, de todas las formas posibles.
 79. El reverso de una cadena se define recursivamente como:
 
     $a^R = a$,\
-    $(wa)^R=aw^R$
+    $(\omega a)^R=a \omega ^R$
 
-    para todo $a\in\Sigma$ y $w\in\Sigma^*$. Utilizando esta definición,
+    para todo $a\in\Sigma$ y $\omega\in\Sigma^*$. Utilizando esta definición,
     demuestra que:
 
     $(uv)^R=v^Ru^R$
@@ -696,9 +699,9 @@ de $A$, de todas las formas posibles.
        conmutativa, podemos decir que: $|u| + |v| = |v| + |u|$, por lo
        tanto: $|uv| = |vu|$.
 
-86. Dado el alfabeto $A=\left\\{a, b, c\right\\}$, encuentra $L^*$ para:\
+86. Dado el alfabeto $A=\left\\{a, b, c\right\\}$, encuentra $L^* $ para:\
     Recordando que
-    $L^* = \left\\{\text{concatenaciones de cero o más elementos de L}\right\\}$.
+    $L^* = \left\\{ \text{concatenaciones de cero o más elementos de L} \right\\} $.
 
     a)  $L=\left\\{b^2\right\\}$\
         $L = \left\\{b^2\right\\} = \left\\{bb\right\\}$. Los elementos de L
