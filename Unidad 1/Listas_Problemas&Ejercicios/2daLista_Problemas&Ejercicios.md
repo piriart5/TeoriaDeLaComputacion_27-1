@@ -1442,7 +1442,7 @@ $\quad\Sigma_3 = \left\\{a,b\right\\}$
      <img src="/Unidad%201/Recursos/Imagenes_Lista2/ej_124.png" style="height:4cm" />
      </figure>
 
-     **a)**  ¿De cuántas formas pueden estar colocadas las tres palancas?\
+     **a)**  ¿De cuántas formas pueden estar colocadas las tres palancas?
 
   El mecanismo cuenta con **tres palancas** en total, dado que
   cada palanca tiene dos **posiciones posibles**, las palancas se
@@ -1452,7 +1452,7 @@ $\quad\Sigma_3 = \left\\{a,b\right\\}$
      **b)**  Realice un dibujo de cada uno de los estados en los que pueden
          estar colocadas e identifique cuál es el resultado de soltar
          una canica en 0 o en 1 en cada uno de los estados, así como la
-         posición en la que quedarán las palancas después de cada paso.\
+         posición en la que quedarán las palancas después de cada paso.
 
   Recordando las posibles posiciones de las palancas:\
   (diagonal izquierda) $\rightarrow$ la canica se desvía hacia la
