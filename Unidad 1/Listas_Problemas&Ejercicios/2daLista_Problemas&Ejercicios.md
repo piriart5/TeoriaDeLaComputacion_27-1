@@ -3,6 +3,8 @@
 Teoría de la Computación $|$ 4CV4\
 Sánchez Iriarte Juan Pablo $|$ 2025630142
 
+Archivos .JFF de esta práctica en: [Archivos JFF](/Unidad%201/Recursos/ArchivosJFF_Lista2/)
+
 ## Autómatas Finitos
 
 En los problemas 94 - 123, debe hallar un Autómata Finito Determinista
