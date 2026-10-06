@@ -1631,3 +1631,1025 @@ $\quad\Sigma_3 = \left\\{a,b\right\\}$
      </table>
      </div>
    </figure>
+
+- **125.**  Sea $A = (Q, \Sigma, \delta, A_0, F)$ un autómata finito
+    determinista. ¿Cuál es el lenguaje del autómata
+    $A = (Q, \Sigma, \delta, A_0, Q \setminus F )$? (Recuerde que
+    $A \setminus B = \left\\{x : x \in A \text{ y } x \notin B\right\\}$)
+
+    Recordando, de la definición de un Autómata Finito Determinista,
+    que:\
+    $Q \rightarrow$ Conjunto finito, cuyos elementos son los estados de
+    A.\
+    $F \subseteq Q \rightarrow$ Estados finales de A.
+
+    Así mismo,
+    $Q \setminus F = \left\\{x : x \in Q \text{ y } x \notin F\right\\}$,
+    el cuál leemos como: Cualquier *x* tal que *x* pertenece a los
+    estados de A y no pertenece a los estados finales de A.
+
+    Por lo tanto, el lenguaje del autómata:
+    $A = (Q, \Sigma, \delta, A_0, Q \setminus F )$ es el **lenguaje
+    complementario**; si $A = (Q, \Sigma, \delta, A_0, F)$, podemos
+    denotar el nuevo lenguaje como $A'$, mantiene la misma estructura
+    que el autómata $A$, pero **intercambia los estados de aceptación
+    por los de rechazo**.
+
+- **126.**  Sea $A = (Q, \Sigma, \delta, A_0, F)$ un autómata finito
+    determinista. ¿Cuál es el lenguaje del autómata si $F = \emptyset$?
+
+    Recordando, de la definición de un Autómata Finito Determinista,
+    que:\
+    $F \subseteq Q \rightarrow$ Estados finales de A.
+
+    Si $F = \emptyset$ (conjunto vacío), entonces, podemos decir que
+    **NO HAY estados finales**, por lo tanto, es un **lenguaje sin
+    estados de aceptación**.
+
+    Por lo tanto: $A = (Q, \Sigma, \delta, A_0, F=\emptyset)$ es el
+    **lenguaje vacío**. Es decir, rechaza absolutamente todas las
+    palabras posibles sobre el alfabeto $\Sigma$.
+
+- **127.**  Sea $A = (Q, \Sigma, \delta, q_0, F)$ un autómata finito
+    determinista. ¿Cuál es el lenguaje del autómata si $F = Q$?
+
+    Recordando, de la definición de un Autómata Finito Determinista,
+    que:\
+    $Q \rightarrow$ Conjunto finito, cuyos elementos son los estados de
+    A.\
+    $F \subseteq Q \rightarrow$ Estados finales de A.
+
+    Si $F = Q$, entonces, podemos decir que **TODOS los estados de A son
+    estados finales**, por lo tanto, es un **lenguaje sin estados de
+    rechazo**.
+
+    Por lo tanto: $A = (Q, \Sigma, \delta, A_0, F=Q)$ es el **lenguaje
+    universal**, expresado como $\Sigma^*$. Es decir, absolutamente
+    todas las palabras posibles sobre el alfabeto $\Sigma$ son
+    aceptadas.
+
+- **128.**  Sea *L* el lenguaje del autómata dado por el siguiente diagrama:
+
+    <figure data-latex-placement="H">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/ej_128.png" style="height:4cm" />
+    </figure>
+
+    Encuentre un autómata finito determinista que identifique el
+    lenguaje $L_2$ cuyas palabras son las palabras *L* quitándoles el
+    último símbolo. Es decir, si $001001 \in L$, entonces
+    $00100 \in L_2$.
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+      <p><img src="/Unidad%201/Recursos/Imagenes_Lista2/ej_128_afd.png" style="height:4cm" alt="image" />
+      <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow A$</td>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$C$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$C$</td>
+            <td style="text-align: center;">$D$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$C$</td>
+            <td style="text-align: center;">$D$</td>
+            <td style="text-align: center;">$E$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$D$</td>
+            <td style="text-align: center;">$F$</td>
+            <td style="text-align: center;">$E$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$E$</td>
+            <td style="text-align: center;">$E$</td>
+            <td style="text-align: center;">$F$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$F *$</td>
+            <td style="text-align: center;">$D$</td>
+            <td style="text-align: center;">$D$</td>
+        </tr>
+      </tbody>
+     </table></p>
+    </div>
+    <div class="minipage">
+      <p><img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_128.png" style="height:4cm" alt="image" />
+      <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow A$</td>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$C$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$C$</td>
+            <td style="text-align: center;">$D$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$C$</td>
+            <td style="text-align: center;">$D$</td>
+            <td style="text-align: center;">$E$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$D *$</td>
+            <td style="text-align: center;">$F$</td>
+            <td style="text-align: center;">$E$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$E *$</td>
+            <td style="text-align: center;">$E$</td>
+            <td style="text-align: center;">$F$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$F$</td>
+            <td style="text-align: center;">$D$</td>
+            <td style="text-align: center;">$D$</td>
+        </tr>
+      </tbody>
+     </table></p>
+    </div>
+    </figure>
+
+- **131.**  Dibuje el AFD dado por los siguientes elementos:
+
+    $M = (\left\\{q_1, q_2\right\\}, \left\\{0,1\right\\}, \delta, q_1,\left\\{q_2\right\\})$
+
+    La función de transición $\delta$ está definida como sigue:
+
+    $\delta(q_1, 0) = q_1$ y $\delta(q_2, 0) = q_1$
+
+    $\delta(q_1, 1) = q_2$ y $\delta(q_2, 1) = q_2$
+
+    Determine un lenguaje $L(M)$ que el AFD reconoce.
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_131.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_1$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_2 *$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_2$</td>
+        </tr>
+      </tbody>
+     </table>
+    $\therefore L(M)$ = Cadenas que terminan en 1.</p>
+    </div>
+    </figure>
+
+- **133.**  Obtener la tabla de estados y el diagrama de transiciones (esquema
+    AFD) del autómata finito $M = (Q, \Sigma, \delta, q_0, F)$, donde:
+
+    - $Q = \left\\{q_0, q_1, q_2, q_3\right\\}$
+
+    - $\Sigma = \left\\{a, b\right\\}$
+
+    - $q_0$ es el estado inicial y también el estado final (F =
+      $\left\\{q_0\right\\}$)
+
+    Las transiciones están definidas de la siguiente manera:
+
+    $\delta(q_0, a) = q_2$\
+    $\delta(q_1, a) = q_3$\
+    $\delta(q_2, a) = q_0$\
+    $\delta(q_3, a) = q_1$\
+    $\delta(q_0, b) = q_1$\
+    $\delta(q_1, b) = q_0$\
+    $\delta(q_2, b) = q_3$\
+    $\delta(q_3, b) = q_2$
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_133.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$a$</th>
+            <th style="text-align: center;">$b$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0 *$</td>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_3$</td>
+            <td style="text-align: center;">$q_0$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_0$</td>
+            <td style="text-align: center;">$q_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_3$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_2$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+
+- **135.**  Dado $\Sigma = \left\\{a,b\right\\}$, construir un AFD que reconozca
+    el lenguaje:
+
+    $L = \left\\{b^mab^n : m,n>0\right\\}$
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_135.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$a$</th>
+            <th style="text-align: center;">$b$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_3 *$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+
+- **137.**  Construir un AFD que reconozca el conjunto de todas las cadenas
+    sobre $\Sigma = \left\\{a, b\right\\}$ que comiencen con el prefijo
+    *'ab'*.
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_137.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$a$</th>
+            <th style="text-align: center;">$b$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_m$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_2 *$</td>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+
+- **139.**  Construya un autómata finito (FA) que acepte todas las cadenas en
+    $\left\\{0,1\right\\}^*$ que tengan un número par de ceros.
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_139.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0 *$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_0$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_0$</td>
+            <td style="text-align: center;">$q_1$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+
+- **141.** Determine un autómata finito (FA), *M*, que acepte el lenguaje *L*,
+    donde:
+
+    $L = \left\\{\omega \in \left\\{0,1\right\\}^* \quad:\quad \text{ cada } 0 \text{ en } \omega \text{ tiene un } 1 \text{ inmediatamente a su derecha}\right\\}$
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_141.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_0$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_2 *$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+
+- **143.** Determine los lenguajes producidos por los autómatas finitos (FA) mostrados en las Figuras (a) y (b).
+
+    <figure data-latex-placement="H">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/ej_143.png" style="height:4cm" />
+    </figure>
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_143_a.png" style="height:4cm" />
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$a$</th>
+            <th style="text-align: center;">$b$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0 *$</td>
+            <td style="text-align: center;">$q_0$</td>
+            <td style="text-align: center;">$q_0$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+    
+    Ya habíamos visto en un ejercicio anterior que en un autómata cuyo
+    estado final es el estado inicial, es el <strong>lenguaje
+    universal</strong>, por lo tanto acepta TODAS las cadenas posibles sobre
+    el alfabeto $$\Sigma = \left\\{a,b\right\\} $$.
+        
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_143_b.png" style="height:4cm" />
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$a$</th>
+            <th style="text-align: center;">$b$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$\emptyset$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_1 *$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">{ $q_0 , q_1$ }</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+    
+    El autómata no es Determinista, dado que
+    $q_1$ al recibir *b*, el autómata tiene la "libertad" de tomar dos
+    caminos simultáneamente. El autómata acepta el conjunto de todas las
+    cadenas sobre el alfabeto
+    $$\Sigma = \left\\{a, b\right\\} $$
+
+- **145.** Encuentre un AFD que lee un número binario de derecha a izquierda e
+    identifica aquellos que son múltiplos de 5.
+
+    Cuando se lee de **derecha a izquierda**, el número se forma sumando
+    cada bit ($b$) multiplicado por su posición en potencias de 2. De la
+    siguiente manera:
+
+    $V = b_0\cdot2^0 + b_1\cdot2^1 + b_2\cdot2^2 + ...$
+
+    Si observamos las potencias de 2 módulo 5, ocurre un ciclo
+    repetitivo cada 4 posiciones:
+
+    - $2^0 = 1$ *mod 5* $= 1$
+
+    - $2^1 = 2$ *mod 5* $= 2$
+
+    - $2^2 = 4$ *mod 5* $= 4$
+
+    - $2^3 = 8$ *mod 5* $= 3$
+
+    - $2^4 = 16$ *mod 5* $= 1$\
+      el ciclo se repite\...
+
+    Para procesar la cadena correctamente, el autómata necesita llevar
+    el control de dos cosas simultáneamente:
+
+    1.  El residuo actual del número modulo 5:
+        $r \in \left\\{0,1,2,3,4\right\\}$
+
+    2.  El peso (potencia) de la posición actual del bit:
+        $p \in \left\\{1,2,3,4\right\\}$
+
+    Cuando el autómata se encuentra en un estado con residuo *r* y peso
+    de posición *p*, al leer un nuevo bit *b* (0 o 1):
+
+    - **Si b = 0:** El valor no cambia. El residuo *r* se queda igual,
+      pero el peso de la posición avanza al siguiente valor:
+      $(p \cdot 2)$ *mod 5*.
+
+    - **Si b = 1:** Se le suma el valor del peso actual al residuo:
+      $r_{nuevo} = (r + p)$ *mod 5* y el peso de la posición también
+      avanza: $(p \cdot 2)$ *mod 5*.
+
+    Para el AFD, nombraremos a los estados: $r_np_m$. El estado inicial
+    es $r_0p_1$ y los finales todos los estados cuyo resuido sea 0:
+    $r_0p_1, r_0p_2, r_0p_3, r_0p_4$.
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_145.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow r_0p_1 *$</td>
+            <td style="text-align: center;">$r_0p_2$</td>
+            <td style="text-align: center;">$r_1p_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_1p_1$</td>
+            <td style="text-align: center;">$r_1p_2$</td>
+            <td style="text-align: center;">$r_2p_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_2p_1$</td>
+            <td style="text-align: center;">$r_2p_2$</td>
+            <td style="text-align: center;">$r_3p_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_3p_1$</td>
+            <td style="text-align: center;">$r_3p_2$</td>
+            <td style="text-align: center;">$r_4p_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_4p_1$</td>
+            <td style="text-align: center;">$r_4p_2$</td>
+            <td style="text-align: center;">$r_0p_2$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_0p_2 *$</td>
+            <td style="text-align: center;">$r_0p_4$</td>
+            <td style="text-align: center;">$r_2p_4$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_1p_2$</td>
+            <td style="text-align: center;">$r_1p_4$</td>
+            <td style="text-align: center;">$r_3p_4$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_2p_2$</td>
+            <td style="text-align: center;">$r_2p_4$</td>
+            <td style="text-align: center;">$r_4p_4$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_3p_2$</td>
+            <td style="text-align: center;">$r_3p_4$</td>
+            <td style="text-align: center;">$r_4p_4$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_4p_2$</td>
+            <td style="text-align: center;">$r_4p_4$</td>
+            <td style="text-align: center;">$r_1p_4$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_0p_3 *$</td>
+            <td style="text-align: center;">$r_0p_1$</td>
+            <td style="text-align: center;">$r_3p_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_1p_3$</td>
+            <td style="text-align: center;">$r_1p_1$</td>
+            <td style="text-align: center;">$r_4p_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_2p_3$</td>
+            <td style="text-align: center;">$r_2p_1$</td>
+            <td style="text-align: center;">$r_0p_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_3p_3$</td>
+            <td style="text-align: center;">$r_3p_1$</td>
+            <td style="text-align: center;">$r_1p_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_4p_3$</td>
+            <td style="text-align: center;">$r_4p_1$</td>
+            <td style="text-align: center;">$r_2p_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_0p_4 *$</td>
+            <td style="text-align: center;">$r_0p_3$</td>
+            <td style="text-align: center;">$r_4p_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_1p_4$</td>
+            <td style="text-align: center;">$r_1p_3$</td>
+            <td style="text-align: center;">$r_0p_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_2p_4$</td>
+            <td style="text-align: center;">$r_2p_3$</td>
+            <td style="text-align: center;">$r_1p_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_3p_4$</td>
+            <td style="text-align: center;">$r_3p_3$</td>
+            <td style="text-align: center;">$r_2p_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$r_4p_4$</td>
+            <td style="text-align: center;">$r_4p_3$</td>
+            <td style="text-align: center;">$r_3p_3$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+
+13. Diseñe un AFD que lee un número binario de izquierda a derecha y lo
+    acepta si es un múltiplo de 6.
+
+    Cuando leemos un número binario de **izquierda a derecha**, podemos
+    guardar el residuo módulo 6. Si estamos en un estado que representa
+    el resuido *r* y leemos un bit *b*: $r_{nuevo} = (2r + b)$ *mod 6*
+    El estado inicial es $q_0$, y solamente $q_0$ es final, porque
+    queremos numeros divisibles entre 6.
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_147.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0 *$</td>
+            <td style="text-align: center;">$q_0$</td>
+            <td style="text-align: center;">$q_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_4$</td>
+            <td style="text-align: center;">$q_5$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_3$</td>
+            <td style="text-align: center;">$q_0$</td>
+            <td style="text-align: center;">$q_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_4$</td>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_3$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_5$</td>
+            <td style="text-align: center;">$q_4$</td>
+            <td style="text-align: center;">$q_5$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+
+- **148.** Diseñar un autómata finito (FA) que modele el progreso de un alumno
+    de la *ESCOM* a lo largo de una Unidad de Aprendizaje, en este caso,
+    del curso de *Teoría de la Computación*. El autómata debe
+    representar las distintas decisiones que se toman en cada
+    evaluación, como si el alumno aprueba, aplaza o no se presenta a un
+    examen, y controlar que no se presenten más de dos convocatorias en
+    un año. El autómata concluirá cuando el alumno apruebe el curso.
+
+    El alfabeto de entrada estará formado por los siguientes elementos:
+
+    - P : El alumno se presenta al examen
+
+    - N : El alumno no se presenta al examen
+
+    - A : El alumno aprueba el examen
+
+    - S : El alumno aplaza el examen.
+
+    El alumno comenzará en un estado inicial y tomará decisiones sobre
+    si presentarse en las distintas convocatorias de febrero, septiembre
+    y diciembre, hasta que apruebe el curso. Se deben evitar más de dos
+    convocatorias en un año y reiniciar el ciclo en caso de no aprobar
+    en las dos primeras.
+
+    <figure data-latex-placement="H">
+    <div class="minipage">
+    <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_148.png" style="height:4cm" />
+    </div>
+    <div class="minipage">
+    <table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$P$</th>
+            <th style="text-align: center;">$N$</th>
+            <th style="text-align: center;">$A$</th>
+            <th style="text-align: center;">$S$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow q_0$</td>
+            <td style="text-align: center;">$c_1$</td>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$c_1$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_f$</td>
+            <td style="text-align: center;">$q_1$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_1$</td>
+            <td style="text-align: center;">$c_2$</td>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$c_2$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_f$</td>
+            <td style="text-align: center;">$q_0$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_2$</td>
+            <td style="text-align: center;">$c_3$</td>
+            <td style="text-align: center;">$q_0$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$c_3$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_f$</td>
+            <td style="text-align: center;">$q_0$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_f *$</td>
+            <td style="text-align: center;">$q_f$</td>
+            <td style="text-align: center;">$q_f$</td>
+            <td style="text-align: center;">$q_f$</td>
+            <td style="text-align: center;">$q_f$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+            <td style="text-align: center;">$q_m$</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+    </figure>
+
+En los problemas 149 y 150, considere el autómata
+$A = (Q, \Sigma, \delta, A_0, F)$ definidos en cada tabla. Encuentre
+$Q$, $\Sigma$, $A_0$ y $F$, haga el diagrama de transiciones del
+autómata y halle los valores que se piden en cada inciso.
+
+- **149.**
+
+**a)** $\delta(B,0)$
+
+**b)**  $\delta(C,1)$
+
+**c)**  $\hat{\delta}(A,1101)$
+
+**d)**  $\hat{\delta}(A,01001)$
+
+<figure data-latex-placement="H">
+<div class="minipage">
+<table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow A$</td>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$C$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$A$</td>
+            <td style="text-align: center;">$C$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$C *$</td>
+            <td style="text-align: center;">$C$</td>
+            <td style="text-align: center;">$A$</td>
+        </tr>
+      </tbody>
+     </table>
+</div>
+
+- $Q = \left\\{A,B,C\right\\}$
+- $\Sigma = \left\\{0,1\right\\}$
+- $A_0 = A$
+- $F = C$
+
+<div class="minipage">
+<img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_149.png" style="height:4cm" />
+</div>
+</figure>
+
+**a)**  $\delta(B,0)$
+
+De la tabla de transiciones proporcionada: $\delta(B,0) = A$
+
+**b)**  $\delta(C,1) = A$
+
+De la tabla de transiciones proporcionada: $\delta(C,1) = A$
+
+**c)**  $\hat{\delta}(A,1101)$
+
+Veamos que: $\hat{\delta}(A,\lambda) = A$,\
+entonces: $\hat{\delta}(A, 1) = \delta(\hat{\delta}(A, \lambda), 1) = C$\
+Así:
+
+$\hat{\delta}(A, 11) = \delta(\hat{\delta}(A, 1), 1) = \delta(C, 1) = A$\
+$\hat{\delta}(A, 110) = \delta(\hat{\delta}(A, 11), 0) = \delta(A, 0) = B$\
+$\hat{\delta}(A, 1101) = \delta(\hat{\delta}(A, 110), 1) = \delta(B, 1) = C$
+
+$\therefore \hat{\delta}(A, 1101) = C$
+
+**d)**  $\hat{\delta}(A,01001)$
+
+Veamos que: $\hat{\delta}(A,\lambda) = A$,\
+entonces: $\hat{\delta}(A, 0) = \delta(\hat{\delta}(A, \lambda), 0) = B$\
+Así:
+
+$\hat{\delta}(A, 01) = \delta(\hat{\delta}(A, 0), 1) = \delta(B, 1) = C$\
+$\hat{\delta}(A, 010) = \delta(\hat{\delta}(A, 01), 0) = \delta(C, 0) = C$\
+$\hat{\delta}(A, 0100) = \delta(\hat{\delta}(A, 010), 0) = \delta(C, 0) = C$\
+$\hat{\delta}(A, 01001) = \delta(\hat{\delta}(A, 0100), 1) = \delta(C, 1) = A$
+
+$\therefore \hat{\delta}(A, 1101) = A$
+
+- **150.**
+
+**a)**  $\hat{\delta}(B,10a11)$
+
+**b)**  $\hat{\delta}(B,aa1100)$
+
+**c)**  $\hat{\delta}(A,a01a01)$
+
+**d)**  $\hat{\delta}(C,a11a00)$
+
+<figure data-latex-placement="H">
+<div class="minipage">
+<table>
+      <thead>
+        <tr>
+            <th style="text-align: center;"></th>
+            <th style="text-align: center;">$0$</th>
+            <th style="text-align: center;">$1$</th>
+            <th style="text-align: center;">$a$</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td style="text-align: center;">$\rightarrow A$</td>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$C$</td>
+            <td style="text-align: center;">$D$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$B *$</td>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$C$</td>
+            <td style="text-align: center;">$C$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$C *$</td>
+            <td style="text-align: center;">$A$</td>
+            <td style="text-align: center;">$A$</td>
+            <td style="text-align: center;">$D$</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">$D *$</td>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$B$</td>
+            <td style="text-align: center;">$B$</td>
+        </tr>
+      </tbody>
+     </table>
+</div>
+
+- $Q = \left\\{A,B,C,D\right\\}$
+- $\Sigma = \left\\{0,1,a\right\\}$
+- $A_0 = A$
+- $F = \left\\{B,C,D\right\\}$
+
+<div class="minipage">
+<img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_149.png" style="height:4cm" />
+</div>
+</figure>
+
+**a)**  $\hat{\delta}(B,10a11)$
+
+Veamos que: $\hat{\delta}(B,\lambda) = B$,\
+entonces: $\hat{\delta}(B, 1) = \delta(\hat{\delta}(B, \lambda), 1) = C$\
+Así:
+
+$\hat{\delta}(B, 10) = \delta(\hat{\delta}(B, 1), 0) = \delta(C, 0) = A$\
+$\hat{\delta}(B, 10a) = \delta(\hat{\delta}(B, 10), a) = \delta(A, a) = D$\
+$\hat{\delta}(B, 10a1) = \delta(\hat{\delta}(B, 10a), 1) = \delta(D, 1) = B$\
+$\hat{\delta}(B, 10a11) = \delta(\hat{\delta}(B, 10a1), 1) = \delta(B, 1) = C$
+
+$\therefore \hat{\delta}(B, 10a11) = C$
+
+**b)**  $\hat{\delta}(B,aa1100)$
+
+Veamos que: $\hat{\delta}(B,\lambda) = B$,\
+entonces: $\hat{\delta}(B, a) = \delta(\hat{\delta}(B, \lambda), a) = C$\
+Así:
+
+$\hat{\delta}(B, aa) = \delta(\hat{\delta}(B, a), a) = \delta(C, a) = D$\
+$\hat{\delta}(B, aa1) = \delta(\hat{\delta}(B, aa), 1) = \delta(D, 1) = B$\
+$\hat{\delta}(B, aa11) = \delta(\hat{\delta}(B, aa1), 1) = \delta(B, 1) = C$\
+$\hat{\delta}(B, aa110) = \delta(\hat{\delta}(B, aa11), 0) = \delta(C, 0) = A$\
+$\hat{\delta}(B, aa1100) = \delta(\hat{\delta}(B, aa110), 0) = \delta(A, 0) = B$
+
+$\therefore \hat{\delta}(B, aa1100) = B$
+
+**c)**  $\hat{\delta}(A,a01a01)$
+
+Veamos que: $\hat{\delta}(A,\lambda) = A$,\
+entonces: $\hat{\delta}(A, a) = \delta(\hat{\delta}(A, \lambda), a) = D$\
+Así:
+
+$\hat{\delta}(A, a0) = \delta(\hat{\delta}(A, a), 0) = \delta(D, 0) = B$\
+$\hat{\delta}(A, a01) = \delta(\hat{\delta}(A, a0), 1) = \delta(B, 1) = C$\
+$\hat{\delta}(A, a01a) = \delta(\hat{\delta}(A, a01), a) = \delta(C, a) = D$\
+$\hat{\delta}(A, a01a0) = \delta(\hat{\delta}(A, a01a), 0) = \delta(D, 0) = B$\
+$\hat{\delta}(A, a01a01) = \delta(\hat{\delta}(A, a01a0), 1) = \delta(B, 1) = C$
+
+$\therefore \hat{\delta}(A, a01a01) = C$
+
+**d)**  $\hat{\delta}(C,a11a00)$
+
+Veamos que: $\hat{\delta}(C,\lambda) = C$,\
+entonces: $\hat{\delta}(C, a) = \delta(\hat{\delta}(C, \lambda), a) = D$\
+Así:
+
+$\hat{\delta}(C, a1) = \delta(\hat{\delta}(C, a), 1) = \delta(D, 1) = B$\
+$\hat{\delta}(C, a11) = \delta(\hat{\delta}(C, a1), 1) = \delta(B, 1) = C$\
+$\hat{\delta}(C, a11a) = \delta(\hat{\delta}(C, a11), a) = \delta(C, a) = D$\
+$\hat{\delta}(C, a11a0) = \delta(\hat{\delta}(C, a11a), 0) = \delta(D, 0) = B$\
+$\hat{\delta}(C, a11a00) = \delta(\hat{\delta}(C, a11a0), 0) = \delta(B, 0) = B$
+
+$\therefore \hat{\delta}(C, a11a00) = B$
