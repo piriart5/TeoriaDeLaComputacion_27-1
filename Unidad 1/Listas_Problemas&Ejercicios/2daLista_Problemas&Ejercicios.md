@@ -789,7 +789,7 @@ $\quad\Sigma_3 = \left\\{a,b\right\\}$
      subcadena *01002*.
 
      Para este ejercicio se utilizará para el nombre de los estados el formato: $q_{n_m}$,\
-     dónde *n* es el contador de ocurrencias detectadas de la subcaden y *m* es el progreso del         patrón.
+     dónde *n* es el contador de ocurrencias detectadas de la subcaden y *m* es el progreso del patrón.
 
      <figure data-latex-placement="H">
      <div class="minipage">
@@ -1530,7 +1530,7 @@ $\quad\Sigma_3 = \left\\{a,b\right\\}$
 
   <figure data-latex-placement="H">
     <div class="minipage">
-       <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_124.png" style="height:4.5cm" />
+       <img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_124.png" style="height:4cm" />
      </div>
      <div class="minipage">
      <table>
@@ -2595,7 +2595,7 @@ $\therefore \hat{\delta}(A, 1101) = A$
 - $F = \left\\{B,C,D\right\\}$
 
 <div class="minipage">
-<img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_149.png" style="height:4cm" />
+<img src="/Unidad%201/Recursos/Imagenes_Lista2/sol_150.png" style="height:4cm" />
 </div>
 </figure>
 
