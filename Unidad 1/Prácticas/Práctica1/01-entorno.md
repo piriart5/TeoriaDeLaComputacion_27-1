@@ -239,4 +239,10 @@ En cambio: ```FROM python:3.12-slim``` indica que queremos utilizar la familia *
 
 **Archivo ```.gitignore:```** [.gitignore](/.gitignore)
 
-### 
+### Realice al menos cinco confirmaciones con mensajes descriptivos
+
+**Ver *Commits*:** [Commits](https://github.com/piriart5/TeoriaDeLaComputacion_27-1/commits/main/)
+
+### Cree una rama, realice en ella un cambio, abra un *Pull Request*, descríbalo y fusiónelo
+
+## Parte C. Los tres entornos de Python
