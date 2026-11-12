@@ -35,3 +35,4 @@ Se presentan a continuación los temas contenidos en esta unidad:
 - [Práctica 1: Operaciones Básicas sobre Lenguajes](/Unidad%201/Prácticas/Práctica1)
 - [Práctica 2: Autómatas Finitos No Deterministas (AFND) y Simulación de AFD con Interfaz Gráficas](/Unidad%201/Prácticas/Práctica2)
 - [Práctica 3: Uso de la Herramienta JFLAP para Convertir Autómatas Finitos Deterministas a Expresiones Regulares y Extensión de Software para Simular Autómatas No Deterministas, AFN con Transiciones Lambda y Minimización de AFD](/Unidad%201/Prácticas/Práctica3)
+- [Práctica 4: Uso de las Expresiones Regulares y Extensión de Software para Convertir Expresiones Regulares](/Unidad%201/Prácticas/Práctica3)
